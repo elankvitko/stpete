@@ -1,0 +1,196 @@
+<body class="light">
+    <!-- Header Starts -->
+    <main id="top" class="masthead" role="main">
+        <div class="container">
+            <!-- Startup Logo -->
+            <div class="logo">
+                <!-- <a href="#"><img src="images/logo-dark.png" alt="All in One Logo"></a> -->
+            </div>
+            <!-- Hero Title -->
+            <h1 class="main-title">St. Petersburg</h1>
+            <!-- Sub Title -->
+            <!-- <h4 class="sub-title">Slogan</h4> -->
+            <!-- Quick Features and form -->
+            <div class="row has-padding-top">
+
+                <!-- Signup form -->
+                <div class="col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-4 col-md-push-8">
+                    <div class="contact-form">
+                        <!-- <div class="point-arrow hidden-xs hidden-sm"><img src="images/arrow-dark.png" align="arrow" /> </div> -->
+                        <h6 class="mini-title">Please fill out this form to request<br>
+            more information.</h6>
+
+                        <!--### Contact form ###
+            Tip : You can change the text of success/error messages on /js/contact_form.js file -->
+
+                        <!--If you want your users to redirect to another page, add the page name inside data-redirect
+            For example, if you want to redirect to thanks.html page, the code should look like  (data-redirect="thanks.html")-->
+
+                        <form class="form" id="railscontactform" data-redirect="none" method='post' action='/home'>
+                            <div class="form-group">
+                                <input class="form-control input-lg" type="text" placeholder="Full Name" name="name" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control input-lg" type="email" placeholder="Email" name="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control input-lg" type="text" placeholder="Phone Number" name="mobile" id="mobile" required>
+                            </div>
+                            <input class="btn btn-success btn-lg btn-block submit-top-form" type="submit" value="Submit">
+                            <span class="loading"></span>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-8 col-md-pull-4">
+                    <!-- <img src="images/real-est-banner.png" alt="banner" class="img-responsive"> -->
+                </div>
+
+            </div>
+            <!-- // Contact  form Ends -->
+
+        </div>
+    </main>
+    <!-- // Parallax Header Ends -->
+    <!-- Container -->
+    <div class="container" id="explore">
+        <!-- Featured Image + Desc -->
+        <!-- //Featured Image + Desc -->
+
+        <!--Supporting Content-->
+
+        <section class="supporing-content">
+            <div class="row has-padding-top">
+                <div class="col-md-7">
+                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                    <h5> Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur </h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem</p>
+                </div>
+                <div class="col-md-5"> <%= image_tag( "_DSC0093-1", alt: "image", class: "img-responsive center-block" ) %></div>
+            </div>
+        </section>
+
+        <!-- // Supporting Content-->
+
+        <!-- Features Section -->
+
+        <section class="row features has-padding-top">
+            <!-- Feature 01 -->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail"> <%= image_tag( 'icon-color-2.png' ) %>
+                    <div class="caption">
+                        <h3>Historical Building</h3>
+                        <p>Built in 1924, this beautiful historic building went through major renovations in 2012</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 02 -->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail"> <%= image_tag( 'icon-color-2.png' ) %>
+                    <div class="caption">
+                        <h3>Talk About Size</h3>
+                        <p>This 3 story building with 60 rooms/units is a whopping 31,000 square feet situated in the heart of St. Petersburg, Fl</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 03 -->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail"> <%= image_tag( 'icon-color-2.png' ) %>
+                    <div class="caption">
+                        <h3>The Land</h3>
+                        <p>The lot size is just under an acre with the adjacent lots included in the sale</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- // Features Section Ends -->
+
+        <!-- Video Section -->
+
+        <div class="section-title">
+            <h2>Take a look at our virtual tour!</h2>
+        </div>
+
+        <div class="video-block text-center" id="videoBlock">
+            <iframe src="https://player.vimeo.com/video/4240369?wmode=opaque&title=0&byline=0&portrait=0&badge=0" width="620" height="348" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        </div>
+
+        <!-- // Video Section -->
+
+    </div>
+    <!-- // Container Ends -->
+
+    </div>
+    <!-- // Container Ends -->
+
+    <!--  Footer CTA Starts -->
+
+    <section class="highlight">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>If You Are Interested, Please Look Get In Touch With Us Below</h2>
+            </div>
+            <!-- Mailchimp Subscribe form -->
+            <div class="row has-margin-bottom">
+                <div class="col-md-12 text-center"> <a href="#top" class="btn btn-primary btn-lg">REQUEST QUOTE</a> </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- //  Footer CTA Ends -->
+
+    <!-- Container -->
+    <div class="container">
+        <section class="row breath">
+            <div class="col-md-12 footerlinks">
+                <p>&copy; 2017 All in One. All Rights Reserved</p>
+            </div>
+        </section>
+        <!-- // End Client Logos -->
+
+    </div>
+    <!-- // Container Ends -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <%= javascript_include_tag 'bootstrap.min.js' %>
+    <%= javascript_include_tag 'ketchup.all.js' %>
+    <%= javascript_include_tag 'contact_form.js' %>
+    <%= javascript_include_tag 'exitpopup.js' %>
+    <%= javascript_include_tag 'script.js' %>
+    <%= javascript_include_tag 'fitvids.js' %>
+
+    <script>
+    $(document).ready(function() {
+        // Target your .container, .wrapper, .post, etc.
+        $("#videoBlock").fitVids();
+    });
+
+
+    $( '.submit-top-form' ).on( 'click', function( e ) {
+      e.preventDefault();
+
+      var target = e.target.parentElement;
+      var type = target.method;
+      var url = target.action;
+      var data = $( target ).serialize();
+
+      $.ajax({
+        type: type,
+        url: url,
+        data: data
+      }).done( function( response ) {
+        $( '#railscontactform' ).hide();
+        $( '.contact-form' ).append( response );
+        $( '.contact-form' ).append( "<br><br><br><br>" );
+      });
+    });
+    </script>
+</body>
