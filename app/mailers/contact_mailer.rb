@@ -4,7 +4,7 @@ class ContactMailer < ApplicationMailer
     @email = email
     @phone = phone
 
-    mail to: "ekvitko@qrpgroup.com",
+    mail to: "assets@floridahealthcarebrokerage.com",
          subject: "Info Request - St. Petersburg"
   end
 end
