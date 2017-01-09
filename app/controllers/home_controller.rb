@@ -8,6 +8,8 @@ class HomeController < ApplicationController
         @pics_arr << img
       end
     end
+    
+    @pics_arr = @pics_arr.sort
   end
 
   def create
