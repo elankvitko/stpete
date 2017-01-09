@@ -62,9 +62,17 @@
         <section class="supporing-content">
             <div class="row has-padding-top">
                 <div class="col-md-7">
-                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-                    <h5> Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur </h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem</p>
+                    <h4>Property Description</h4>
+                    <p>
+                      Year Built 1926/ 2014 Major Renovation <br>
+                      Building Size approx. 33,000 sq. ft. <br>
+                      Lot includes 2 adjacent parcels.  Total land under 1 acre <br>
+                      60 Rooms / 60 Units all with bathroom and showers <br>
+                      Many common areas.  Full commercial kitchen and dining room <br>
+                      All FF&F included and property is turn key for limited services hotel <br>
+                      And Seniors Housing/Congregate Care <br>
+                      Subject property is currently licensed for 60 bed assisted living facility
+                    </p>
                 </div>
                 <div class="col-md-5"> <%= image_tag( "_DSC0093-1", alt: "image", class: "img-responsive center-block" ) %></div>
             </div>
@@ -112,12 +120,68 @@
         <!-- Video Section -->
 
         <div class="section-title">
-            <h2>Take a look at our virtual tour!</h2>
+            <h2>Take a look at our virtual tour <a href="http://www.tourbuzz.net/public/vtour/display/599797?idx=1" target='_blank'>Here!</a></h2>
         </div>
 
-        <div class="video-block text-center" id="videoBlock">
-            <iframe src="https://player.vimeo.com/video/4240369?wmode=opaque&title=0&byline=0&portrait=0&badge=0" width="620" height="348" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        <div id="blueimp-gallery" class="blueimp-gallery">
+          <!-- The container for the modal slides -->
+          <div class="slides"></div>
+          <!-- Controls for the borderless lightbox -->
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="close">×</a>
+          <a class="play-pause"></a>
+          <ol class="indicator"></ol>
+          <!-- The modal dialog, which will be used to wrap the lightbox content -->
+          <div class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default pull-left prev">
+                      <i class="glyphicon glyphicon-chevron-left"></i>
+                      Previous
+                  </button>
+                  <button type="button" class="btn btn-primary next">
+                      Next
+                      <i class="glyphicon glyphicon-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div id="links">
+          <a href="assets/_DSC0093-1" title="" data-gallery>
+              <%= image_tag( "_DSC0093-1", width: '300px' ) %>
+          </a>
+          <a href="assets/_DSC0093-1" title="" data-gallery>
+              <%= image_tag( "_DSC0093-1", width: '300px' ) %>
+          </a>
+          <a href="assets/_DSC0093-1" title="" data-gallery>
+              <%= image_tag( "_DSC0093-1", width: '300px' ) %>
+          </a>
+          <a href="assets/_DSC0093-1" title="" data-gallery>
+              <%= image_tag( "_DSC0093-1", width: '300px' ) %>
+          </a>
+          <a href="assets/_DSC0093-1" title="" data-gallery>
+              <%= image_tag( "_DSC0093-1", width: '300px' ) %>
+          </a>
+          <a href="assets/_DSC0093-1" title="" data-gallery>
+              <%= image_tag( "_DSC0093-1", width: '300px' ) %>
+          </a>
+        </div>
+
+
+        <!-- <div class="video-block text-center" id="videoBlock"> -->
+            <!-- <iframe src="https://player.vimeo.com/video/4240369?wmode=opaque&title=0&byline=0&portrait=0&badge=0" width="620" height="348" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe> -->
+        <!-- </div> -->
 
         <!-- // Video Section -->
 
