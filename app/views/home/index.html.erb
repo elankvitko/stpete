@@ -64,14 +64,14 @@
                 <div class="col-md-7">
                     <h4>Property Description</h4>
                     <p>
-                      Year Built 1926/ 2014 Major Renovation <br>
+                      Year Built 1926/ 2014 Major Renovation. <br>
                       Building Size approx. 33,000 sq. ft. <br>
-                      Lot includes 2 adjacent parcels.  Total land under 1 acre <br>
-                      60 Rooms / 60 Units all with bathroom and showers <br>
-                      Many common areas.  Full commercial kitchen and dining room <br>
-                      All FF&F included and property is turn key for limited services hotel <br>
-                      And Seniors Housing/Congregate Care <br>
-                      Subject property is currently licensed for 60 bed assisted living facility
+                      Lot includes 2 adjacent parcels.  Total land under 1 acre. <br>
+                      60 Rooms / 60 Units all with bathroom and showers. <br>
+                      Many common areas.  Full commercial kitchen and dining room. <br>
+                      All FF&F included and property is turn key for limited services hotel. <br>
+                      And Seniors Housing/Congregate Care. <br>
+                      Subject property is currently licensed for 60 bed assisted living facility.
                     </p>
                 </div>
                 <div class="col-md-5"> <%= image_tag( "_DSC0093-1", alt: "image", class: "img-responsive center-block" ) %></div>
@@ -158,24 +158,11 @@
         </div>
 
         <div id="links">
-          <a href="assets/_DSC0093-1" title="" data-gallery>
-              <%= image_tag( "_DSC0093-1", width: '300px' ) %>
-          </a>
-          <a href="assets/_DSC0096-3" title="" data-gallery>
-              <%= image_tag( "_DSC0096-3", width: '300px' ) %>
-          </a>
-          <a href="assets/_DSC0100-5" title="" data-gallery>
-              <%= image_tag( "_DSC0100-5", width: '300px' ) %>
-          </a>
-          <a href="assets/_DSC0103-7" title="" data-gallery>
-              <%= image_tag( "_DSC0103-7", width: '300px' ) %>
-          </a>
-          <a href="assets/_DSC0107-9" title="" data-gallery>
-              <%= image_tag( "_DSC0107-9", width: '300px' ) %>
-          </a>
-          <a href="assets/_DSC0109-10" title="" data-gallery>
-              <%= image_tag( "_DSC0109-10", width: '300px' ) %>
-          </a>
+          <% @pics_arr.each do | img | %>
+            <a href="assets/<%= img %>" title="" data-gallery>
+              <%= image_tag( img, width: '300px' ) %>
+            </a>
+          <% end %>
         </div>
 
 

@@ -1,5 +1,13 @@
 class HomeController < ApplicationController
   def index
+    @pics = Dir.entries( "#{Rails.root}/app/assets/images" )
+    @pics_arr = []
+
+    @pics.each do | img |
+      if img.include?( '.jpg' ) && !img.include?( 'exaple' )
+        @pics_arr << img
+      end
+    end
   end
 
   def create
